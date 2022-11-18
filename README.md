@@ -80,10 +80,10 @@ In particular, we will look at the top 10 countries with highest review output a
 
 
 ## File structure
-In order to make our proposal clearer, we have decided to separate our first analyses into several notebooks. 
+In order to make our proposal clearer, we have decided to separate our first analyses into three notebooks, one for each part. 
 - `pre_processing.ipynb`: part 1 
 - `temporal_analysis.ipynb`: part 2
-- `sentimental_analysis.ipynb`: part 3
+- `textual_reviews_analysis.ipynb`: part 3
 
 The datasets that we will use are stored into the zip file `final`
 In that file we put the result of our pre-processed data (part 1).

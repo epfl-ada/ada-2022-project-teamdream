@@ -11,20 +11,18 @@ First of all, we will look at the most rated beers and most popular breweries to
 *For instance, can we observe a peak every 4 years in the consumption of beers from a certain brewery?*
 
 Then, we will analyze the ratings and reviews in a range of one month around the events which have caught our attention in the first part of the project. Our goal is to understand the variation in ratings and reviews between winning and losing countries.<br>
-We will analyze the trends depending on the team's results. And use sentiment analysis to highlight positive and negative emotions that the result of a game can bring out in fans and therefore affect reviews.
+We will analyze the trends depending on the team's results. We will also look for the effect of these events in the textual reviews by leveraging sentiment analysis.
 
 Finally, the whole process will enable us to evaluate how to adapt the sales of breweries depending on the results.
 
 ## Research Questions
 
-- Do the breweries sponsoring sporting events earn a positive or negative impact from that marketing campaign ?
 - Is there a temporal correlation between the ratings dates and major sporting events ?
-
 - Can we observe a difference in consumption between the users of countries that win/lose a match ?
 - Do the winning/losing nations drink the same beer when they win/lose ? Does their consumption increase or decrease ?
-- Are the comments' emotional tone reflecting the result of a game ? 
-
-- Which is the best beer to sell to each country if they win the major sporting events ?
+- Can textual reviews provide an additional metric for beer popularity in relation to sporting events ?
+- Do the breweries sponsoring sporting events earn a positive or negative impact from that marketing campaign ?
+- Can we tell which beer to sell to each country depending on the results of given sporting event ?
 
 ## Proposed additional datasets
 
@@ -32,17 +30,16 @@ Finally, the whole process will enable us to evaluate how to adapt the sales of 
 [BeerAnalytics](https://www.beer-analytics.com/styles/ipa/specialty-ipa/)<br>
 This dataset gives us information about the popularity over time for each style of beer. <br>
 It could be interesting to analyze that information to see if some particular style is popular during a major sporting event.<br>
-Therefore we have a clue on which beers might have the better ratings.
+
 
 2. **History of SuperBowl**
 [History of SuperBowl](https://data.world/sports/history-of-the-super-bowl/workspace/file?filename=Super_Bowl.csv)<br>
 In this dataset we can find information about all the past SuperBowls. <br>
-We can therefore use the team's state and the place where the game take place to do our analysis.
+It also provides information about results of state teams in the US. This is particularly important to study the reviews from the US since it is the only country whose reviews are recorded per state (the number of said reviews is also very significant)
 
-3. **NBA Finals and MVP**
-[NBA Finals and MVP](https://data.world/datatouille/nba-finals-and-mvps/workspace/file?filename=NBA+Finals+and+MVP.xlsx)<br>
-This dataset contains information about the NBA Finals winner and the Most Valuable Player.
-We can use that data to complete our analyze of the major sporting events.
+3. **NBA Playoffs**<br>
+This dataset contains information about the NBA Playoffs winner and games.
+We can use this data as a source of sporting events
 
 ## Methods
 
@@ -66,15 +63,27 @@ Our main objective is to analyze variation through time, therefore we will use t
 We started to analyze the evolution of the top 10 beers and breweries to get a general idea and determine if our project was feasible. We are satisfied with these first results because we do observe peaks in the number of comments on the beers studied during the World Cup period in 2014.
 
 
-**3. AMINE- TO DO**
-To analyze reviews we will use NLP methods and sentiment analysis. <br>
-We can also use clustering to see if reviews with the same connotations were posted around the same time.
+**3. Textual Data Analysis**
+**Aim:** Study whether textual reviews can be used to measure beer popularity<br>
+Our goal for this part is to analyze the textual reviews and see if we can derive insights from them. In particular, we aim at predicting whether a given review has a positive or negative sentiment. We think that by considering the sentiment associated to a review, we can study the popularity of certain beers better than just by looking at the numerical ratings. The intuition behind this is that a textual review is a richer source of information than a rating between 0 and 5. We hope that by leveraging sentiment analysis, we can encapsulate this additional information and use it as an additional measure for beer popularity. We therefore present a first implementation of a pipeline that:
+
+
+        - Extracts textual reviews from the dataset
+        - Annotates the reviews (positive/negative for later training)
+        - Represents each review in an embedding space
+        - Trains a classifier on the review embeddings
+        - Uses the classifier to predict the sentiment of a given review
+        - Provides a ranking of beer popularity based on sentiment analysis
+
+In particular, we will look at the top 10 countries with highest review output and try to find their (semantically) most popular beer. As mentioned above, we have yet no reason to believe that this ranking is more "useful" than a rating-based ranking, we just want to study to what extent these two are different for now. 
+
+
 
 ## File structure
-In order to make our proposal clearer, we have decided to separate our first analyses into several notebooks. 
+In order to make our proposal clearer, we have decided to separate our first analyses into three notebooks, one for each part. 
 - `pre_processing.ipynb`: part 1 
 - `temporal_analysis.ipynb`: part 2
-- `sentimental_analysis.ipynb`: part 3
+- `textual_reviews_analysis.ipynb`: part 3
 
 The datasets that we will use are stored into the zip file `final`
 In that file we put the result of our pre-processed data (part 1).

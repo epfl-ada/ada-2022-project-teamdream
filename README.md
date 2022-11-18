@@ -11,20 +11,18 @@ First of all, we will look at the most rated beers and most popular breweries to
 *For instance, can we observe a peak every 4 years in the consumption of beers from a certain brewery?*
 
 Then, we will analyze the ratings and reviews in a range of one month around the events which have caught our attention in the first part of the project. Our goal is to understand the variation in ratings and reviews between winning and losing countries.<br>
-We will analyze the trends depending on the team's results. And use sentiment analysis to highlight positive and negative emotions that the result of a game can bring out in fans and therefore affect reviews.
+We will analyze the trends depending on the team's results. We will also look for the effect of these events in the textual reviews by leveraging sentiment analysis.
 
 Finally, the whole process will enable us to evaluate how to adapt the sales of breweries depending on the results.
 
 ## Research Questions
 
-- Do the breweries sponsoring sporting events earn a positive or negative impact from that marketing campaign ?
 - Is there a temporal correlation between the ratings dates and major sporting events ?
-
 - Can we observe a difference in consumption between the users of countries that win/lose a match ?
 - Do the winning/losing nations drink the same beer when they win/lose ? Does their consumption increase or decrease ?
-- Are the comments' emotional tone reflecting the result of a game ? 
-
-- Which is the best beer to sell to each country if they win the major sporting events ?
+- Can textual reviews provide an additional metric for beer popularity in relation to sporting events ?
+- Do the breweries sponsoring sporting events earn a positive or negative impact from that marketing campaign ?
+- Can we tell which beer to sell to each country depending on the results of given sporting event ?
 
 ## Proposed additional datasets
 

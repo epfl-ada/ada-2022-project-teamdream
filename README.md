@@ -37,9 +37,8 @@ Therefore we have a clue on which beers might have the better ratings.
 In this dataset we can find information about all the past SuperBowls. <br>
 We can therefore use the team's state and the place where the game take place to do our analysis.
 
-3. **NBA Finals and MVP**
-[NBA Finals and MVP](https://data.world/datatouille/nba-finals-and-mvps/workspace/file?filename=NBA+Finals+and+MVP.xlsx)<br>
-This dataset contains information about the NBA Finals winner and the Most Valuable Player.
+3. **NBA Playoffs**
+This dataset contains information about the NBA Playoffs winner and games.
 We can use that data to complete our analyze of the major sporting events.
 
 ## Methods

@@ -69,7 +69,7 @@ Our goal for this part is to analyze the textual reviews and see if we can deriv
 
 
         - Extracts textual reviews from the dataset
-        - Annotates the reviews (positive/negative for later training)
+        - Annotates the reviews (positive/negative for later training) using the ratings 
         - Represents each review in an embedding space
         - Trains a classifier on the review embeddings
         - Uses the classifier to predict the sentiment of a given review
@@ -92,9 +92,9 @@ In that file we put the result of our pre-processed data (part 1).
 
 | Task                                                                        | Team member(s)    | Week           |
 |-----------------------------------------------------------------------------|-------------------|----------------|
-| Pre processing the data                                                     | Joanne and Anne   | up to 18/11    |
-| First analysis and check feasibility of project (for Part 2 and Part 4)     | Amine and Antoine | up to 18/11    |
-| Temporal analysis : Part 2                                                  | All               | 19/11 to 04/12 |
-| Process reviews, find NLP algorithms                                        | Amine             | 28/11 to 04/12 |
-| Finest analysis of beer reviews (sentimental analysis)and consumption rates | All               | 05/12 to 18/12 |
-| Website                                                                     | Joanne            | 14/12 to 25/12 |
+| Data pre-processing.                                                        | Joanne, Anne      | up to 18/11    |
+| Exploratory analysis and checking feasibility of part 2.                    | Antoine, Joanne   | up to 18/11    |
+| Processing textual reviews and checking feasability of part 3.              | Amine             | up to 18/11    |
+| Integrate additional datasets                                               | All               | 28/11 to 04/12 |
+| Develop temporal and textual analysis                                       | All               | 05/12 to 18/12 |
+| Formulate data story into website                                            Joanne            | 14/12 to 25/12 |

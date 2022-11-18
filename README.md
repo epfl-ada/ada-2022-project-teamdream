@@ -29,7 +29,7 @@ Finally, the whole process will enable us to evaluate how to adapt the sales of 
 ## Proposed additional datasets
 
 1. **Beer analytics**
-[blue_text](https://www.beer-analytics.com/styles/ipa/specialty-ipa/)
+[BeerAnalytics](https://www.beer-analytics.com/styles/ipa/specialty-ipa/)
 This dataset gives us information about the popularity over time for each style of beer. <br>
 It could be interesting to analyze that information to see if some particular style is popular during a major sporting event.<br>
 Therefore we have a clue on which beers might have the better ratings.

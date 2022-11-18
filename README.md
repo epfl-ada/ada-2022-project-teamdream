@@ -63,9 +63,11 @@ Our main objective is to analyze variation through time, therefore we will use t
 We started to analyze the evolution of the top 10 beers and breweries to get a general idea and determine if our project was feasible. We are satisfied with these first results because we do observe peaks in the number of comments on the beers studied during the World Cup period in 2014.
 
 
-**3. AMINE- TO DO**
-To analyze reviews we will use NLP methods and sentiment analysis. <br>
-We can also use clustering to see if reviews with the same connotations were posted around the same time.
+**3. Textual Data Analysis**
+**Aim:** Study whether textual reviews can be used to measure beer popularity instead of measuring it just by the numerical ratings<br>
+Our goal for this part is to analyze the textual reviews and see if we can derive insights from them. In particular, we aim at predicting whether a given review has a positive or negative sentiment. We think that by considering the sentiment associated to a review, we can study the popularity of certain beers better than just by looking at the numerical ratings. The intuition behind this is that a textual review is a richer source of information than a rating between 0 and 5. We hope that by leveraging sentiment analysis, we can encapsulate this additional information and use it as an additional measure for beer popularity.
+
+
 
 ## File structure
 In order to make our proposal clearer, we have decided to separate our first analyses into several notebooks. 

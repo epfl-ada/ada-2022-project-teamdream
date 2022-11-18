@@ -4,20 +4,21 @@ Joanne Affolter, Anne de Sacy, Amine Lamouchi, Antoine Munier
 
 ## Abstract 
 
-Our idea is to analyze the relation between football world-cups and beer ratings to evaluate the impact of this huge event on beer consumers. <br>
+Our idea is to analyze the relation between major sporting events (football world-cups, super bowl,...) and beer ratings to evaluate the impact of these huge events on beer consumers and breweries' sales. <br>
 More specifically we will search if world-cups affect beers or breweries' popularity, beer consumption and consumers opinion.
 
-First of all, looking at the most rated beers and breweries we will see if there is a correlation between world-cups and ratings.
+First of all, we will look at the most rated beers and most popular breweries to determine if there exists any temporal correlation between some major sporting events and the popularity of the studied beers/breweries.
+*For instance, can we observe a peak every 4 years in the consumption of beers from a certain brewery?*
 
-Then, we will analyze the ratings and reviews in a range of one month around the event. Our goal is to understand the variation in ratings and reviews between winning and losing countries.<br>
+Then, we will analyze the ratings and reviews in a range of one month around the events which have caught our attention in the first part of the project. Our goal is to understand the variation in ratings and reviews between winning and losing countries.<br>
 We will analyze the trends depending on the team's results. And use sentiment analysis to highlight positive and negative emotions that the result of a game can bring out in fans and therefore affect reviews.
 
-Finally, the whole process will enable us to evaluate how to adapt the sales depending on the results.
+Finally, the whole process will enable us to evaluate how to adapt the sales of breweries depending on the results.
 
 ## Research Questions
 
 - Do the breweries sponsoring world cups earn a positive or negative impact from that marketing campaign ?
-- Is there a correlation between rating and review date during the different world cups ?
+- Is there a temporal correlation between the ratings dates and major sporting events ?
 
 - Can we observe a difference in consumption between the users of countries that win/lose a match ?
 - Do the winning/losing nations drink the same beer when they win/lose ? Does their consumption increase or decrease ?
@@ -27,30 +28,48 @@ Finally, the whole process will enable us to evaluate how to adapt the sales dep
 
 ## Proposed additional datasets
 
-1. Beer analytics
-
+1. **Beer analytics**
+[blue_text](https://www.beer-analytics.com/styles/ipa/specialty-ipa/)
 This dataset gives us information about the popularity over time for each style of beer. <br>
-It could be interesting to analyze that information to see if some particular style is popular during a world cup.<br>
+It could be interesting to analyze that information to see if some particular style is popular during a major sporting event.<br>
 Therefore we have a clue on which beers might have the better ratings.
 
-2. OpenFootball WorldCup
+2. **OpenFootball WorldCup**
 
-In this dataset we have the information about all world cup games and results. <br>
-It will give us the winning and losing countries for each game telling us which countries to look at.
+This dataset gives us informations about all world cup games and results of matchs. <br>
+We will extract the winning and losing countries for each match, telling us which countries to look at for our analysis of the reviews.
 
 ## Methods
 
-First of all we will pre-process the data to extract the interesting features.<br>
-To start our preprocessing we first have explored the matched_data and the other two datasets to determine which one to work on.
-Our analyze has shown that the matched_data did not contain enough data for us to work on it.<br>
+Our project is divided into 3 parts : 
+**1. Data pre-processing**
+**Aim:** Determine which breweries are the most suitable to be sponsors of major sporting events such as the soccer World Cup. <br>
+During this part, we pre-process the data to extract the features needed for the project.<br>
+We first have explored the matched dataset and the other two datasets to determine which one to work on.
+Our analyze has shown that the matched dataset did not contain enough data for us to work on it. We will therefore work on the datasets from each website individually.<br>
 Then we managed to read the ratings file from both websites (RateBeer and BeerAdvocate) and extract the ratings date.
-We completed the beers data from each websites with the number of ratings on each beer and the dates of ratings.<br>
+We merged these dates to the beers dataset from each website. We also added the location of each brewery.<br>
+One important part of our pre-processing was to filter the data in order to work only with the most popular beers (i.e. with the highest number of ratings) and therefore with the breweries who could be sponsors of such events.
 
-In continuation of our project we plan to use various methods :<br>
-Our main objective is to analyze variation through time, therefore we will use time series methods.<br>
-We will perform statistical tests on our data and results to ensure our conclusions.<br>
+**2. Temporal analysis of the popularity of biggest breweries and the impact of major sporting events on their sales**
+**Aim:** find a temporal link between the consumption of  beers of the breweries selected in the pre-processing part  and major sporting events 
+<br>
+We will look at the evolution over time of the number of ratings and search for some peaks in the data during particular events (Football World Cups, Euro, Super Bowl).
+We will group the data in different ways and analyze its temporal evolution to understand how beers' popularity and these events are correlated. 
+*Does a particular **style** stand out during this period? Are the number of comments on a certain **brewery**'s beers increasing? Is it a sponsor of that event? What about the beer consumption in the **country** hosting such events?*<br>
+Our main objective is to analyze variation through time, therefore we will use time series methods. We will also perform statistical tests on our data to ensure our conclusions.<br>
+We started to analyze the evolution of the top 10 beers and breweries to get a general idea and determine if our project was feasible. We are satisfied with these first results because we do observe peaks in the number of comments on the beers studied during the World Cup period in 2014.
+
+
+**3. AMINE- TO DO**
 To analyze reviews we will use NLP methods and sentiment analysis. <br>
 We can also use clustering to see if reviews with the same connotations were posted around the same time.
+
+## File structure
+In order to make our proposal clearer, we have decided to separate our first analyses into several notebooks. 
+- `pre_processing.ipynb`: part 1 
+- temporal_analysis.ipynb`: part 2
+- sentimental_analysis.ipynb`: part 3
 
 ## Proposed timeline
 
@@ -59,9 +78,11 @@ We can also use clustering to see if reviews with the same connotations were pos
 | Task                                                                                                    | Team member(s)    | Week           |
 |---------------------------------------------------------------------------------------------------------|-------------------|----------------|
 | Pre processing the data                                                                                 | Joanne and Anne   | up to 18/11    |
-| First analysis                                                                                          | Amine and Antoine | up to 18/11    |
-| Global and temporal analysis                                                                            | All               | 19/11 to 04/12 |
+| First analysis and check feasability of project (for Part 2 and Part 4)                                 | Amine and Antoine | up to 18/11    |
+| Temporal analysis : Part 2                                                                              | All               | 19/11 to 04/12 |
 | Process reviews, find NLP algorithms                                                                    | Amine             | 28/11 to 04/12 |
-| Zoom on the period of the football world cups and finest analysis of beer reviews and consumption rates | All               | 05/12 to 18/12 |
+| Finest analysis of beer reviews (sentimental analysis)and consumption rates                             | All               | 05/12 to 18/12 |
+| Website                                                                                                 | Joanne            | 14/12 to 25/12 |
+
 
 

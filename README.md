@@ -30,16 +30,16 @@ Finally, the whole process will enable us to evaluate how to adapt the sales of 
 [BeerAnalytics](https://www.beer-analytics.com/styles/ipa/specialty-ipa/)<br>
 This dataset gives us information about the popularity over time for each style of beer. <br>
 It could be interesting to analyze that information to see if some particular style is popular during a major sporting event.<br>
-Therefore we have a clue on which beers might have the better ratings.
+
 
 2. **History of SuperBowl**
 [History of SuperBowl](https://data.world/sports/history-of-the-super-bowl/workspace/file?filename=Super_Bowl.csv)<br>
 In this dataset we can find information about all the past SuperBowls. <br>
-We can therefore use the team's state and the place where the game take place to do our analysis.
+It also provides information about results of state teams in the US. This is particularly important to study the reviews from the US since it is the only country whose reviews are recorded per state (the number of said reviews is also very significant)
 
 3. **NBA Playoffs**<br>
 This dataset contains information about the NBA Playoffs winner and games.
-We can use that data to complete our analyze of the major sporting events.
+We can use this data as a source of sporting events
 
 ## Methods
 

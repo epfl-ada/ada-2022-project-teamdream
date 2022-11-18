@@ -64,8 +64,18 @@ We started to analyze the evolution of the top 10 beers and breweries to get a g
 
 
 **3. Textual Data Analysis**
-**Aim:** Study whether textual reviews can be used to measure beer popularity instead of measuring it just by the numerical ratings<br>
-Our goal for this part is to analyze the textual reviews and see if we can derive insights from them. In particular, we aim at predicting whether a given review has a positive or negative sentiment. We think that by considering the sentiment associated to a review, we can study the popularity of certain beers better than just by looking at the numerical ratings. The intuition behind this is that a textual review is a richer source of information than a rating between 0 and 5. We hope that by leveraging sentiment analysis, we can encapsulate this additional information and use it as an additional measure for beer popularity.
+**Aim:** Study whether textual reviews can be used to measure beer popularity<br>
+Our goal for this part is to analyze the textual reviews and see if we can derive insights from them. In particular, we aim at predicting whether a given review has a positive or negative sentiment. We think that by considering the sentiment associated to a review, we can study the popularity of certain beers better than just by looking at the numerical ratings. The intuition behind this is that a textual review is a richer source of information than a rating between 0 and 5. We hope that by leveraging sentiment analysis, we can encapsulate this additional information and use it as an additional measure for beer popularity. We therefore present a first implementation of a pipeline that:
+
+
+        - Extracts textual reviews from the dataset
+        - Annotates the reviews (positive/negative for later training)
+        - Represents each review in an embedding space
+        - Trains a classifier on the review embeddings
+        - Uses the classifier to predict the sentiment of a given review
+        - Provides a ranking of beer popularity based on sentiment analysis
+
+In particular, we will look at the top 10 countries with highest review output and try to find their (semantically) most popular beer. As mentioned above, we have yet no reason to believe that this ranking is more "useful" than a rating-based ranking, we just want to study to what extent these two are different for now. 
 
 
 

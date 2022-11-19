@@ -88,6 +88,8 @@ In order to make our proposal clearer, we have decided to separate our first ana
 The datasets that we will use are stored into the zip file `final`
 In that file we put the result of our pre-processed data (part 1).
 
+## Website URL 
+[Beer Reviews](https://cerulean-pavlova-66ae22.netlify.app)
 ## Proposed timeline
 
 | Task                                                                        | Team member(s)    | Week           |

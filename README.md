@@ -98,3 +98,8 @@ You will find all the datasets used for the project as well as the notebook `Fin
 Here is the link to our website : [click here](https://cerulean-pavlova-66ae22.netlify.app)
 <br>Enjoy ! 
 
+## Contributions of all group members
+Anne : Introduction + Conclusion + Read Me
+Amine : k-NN + Linear Regression Part + Proofreading and reformulation of the notebook + Help with project formulation + Proofreading and reformulation of Introduction/Conclusion/ReadMe
+Joanne : Project formulation + Everything in the notebook (except k-NN + Linear Regression) +  Everything in the website
+

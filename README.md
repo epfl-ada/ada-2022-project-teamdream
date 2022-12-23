@@ -61,7 +61,7 @@ Here is the link to our website : [click here](https://cerulean-pavlova-66ae22.n
 ## Contributions of all group members
 **Anne :** Introduction + Conclusion + Read Me
 
-**Amine :** k-NN + Linear Regression Part's + Proofreading and reformulation of the notebook + Help with project formulation + Proofreading and reformulation of Introduction/Conclusion
+**Amine :** Problem statement of beer consulting firm + k-NN for beer similarity + Linear Regression to assess feature importance + PCA for data visualisation + Vector space representation of beer reviews + Proofreading and reformulation of the notebook + Help with project formulation + Proofreading and reformulation of Introduction/Conclusion
 
-**Joanne :** Project formulation + Everything in the notebook (except k-NN + Linear Regression) +  Everything in the website + Proofreading and reformulation of ReadMe
+**Joanne :** Project formulation + Everything in the notebook (except k-NN + Linear Regression + PCA + Vector space representation of beers + introduction of part 3) +  Everything in the website + Proofreading and reformulation of ReadMe
 

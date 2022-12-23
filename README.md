@@ -5,7 +5,6 @@ Joanne Affolter, Amine Lamouchi, Anne de Sacy, Antoine Munier
 ## Abstract 
 We are a consulting firm that specializes in helping breweries succeed through the use of data analytics. Our team has expertise in the brewery industry and utilizes a wide range of data sources to provide our clients with informed and strategic advice.
 
-<br>
 Our client, Sam Smith, recently graduated from college in Massachusetts and is interested in starting a brewery. Seeking a more objective perspective, Sam has decided to turn to our consulting service for guidance.
 
 ## Research Questions
@@ -37,7 +36,6 @@ Our client, Sam Smith, recently graduated from college in Massachusetts and is i
 
 **Part 1 - First insights from the beer reviews websites**<br>
 First, we will conduct a general market research on the beer industry in the United States. This will involve examining data on where consumers come from (by state), the evolution of the number of breweries over time, and trends in consumer behavior.
-<br><br>
 
 **Part 2 - Competitive state analysis**<br>
 Once we have a good understanding of the overall market, we will focus on identifying the most promising states for Sam's brewery to operate in.

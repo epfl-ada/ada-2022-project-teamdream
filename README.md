@@ -19,8 +19,7 @@ Our client, Sam Smith, recently graduated from college in Massachusetts and is i
 
 **Part 2 - Competitive state analysis**
 - Where is the best place to open a brewery ?
-    - Which are the states with a large market share to reach ?
-    > What is the repartition of users and breweries across the states ? What is the evolution of the number of users over the years ? 
+    - Which are the states with a large market share to reach ? What is the repartition of users and breweries across the states ? What is the evolution of the number of users over the years ? 
     - Where are the local beer lovers ? 
     - Where are the real beer fans who make a lot of ratings ? 
     - Which breweries are our client's competitors?
@@ -54,7 +53,7 @@ At this stage, we will also consider the feedback Sam has received from his fami
 
 You can find our final analysis in the notebook `FinalNotebook.ipynb`.
 <br>
-We advise you to connect to our `shared Google Drive` which you can find at the following address: **teamdream.ada@gmail.com (password: teAmDreAm123)**
+We advise you to connect to our `shared Google Drive` which you can find at the following address : [click hereh] (https://drive.google.com/drive/my-drive) **(mail : teamdream.ada@gmail.com, password: teAmDreAm123)**
 You will find all the datasets used for the project as well as the notebook `Final.ipynb`.
 
 ## Website 

@@ -53,7 +53,7 @@ At this stage, we will also consider the feedback Sam has received from his fami
 
 You can find our final analysis in the notebook `FinalNotebook.ipynb`.
 <br>
-We advise you to connect to our `shared Google Drive` which you can find at the following address : [click hereh] (https://drive.google.com/drive/my-drive) **(mail : teamdream.ada@gmail.com, password: teAmDreAm123)**
+We advise you to connect to our `shared Google Drive` which you can find at the following address : [click here](https://drive.google.com/drive/my-drive) **(mail : teamdream.ada@gmail.com, password: teAmDreAm123)**
 You will find all the datasets used for the project as well as the notebook `Final.ipynb`.
 
 ## Website 

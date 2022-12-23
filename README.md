@@ -89,11 +89,12 @@ Following that representation we were able to advice our client on which beer st
 
 ## File structure
 
-We put all our analysis in the notebook `FinalNotebook.ipynb`.<br>
-We extracted some data from the provided files and created databases that can be used.
+You can find our final analysis in the notebook `FinalNotebook.ipynb`.
 <br>
-For overview of the ratings with extracted columns 
-``beer_id``, ``date``, ``rating``, ``appearance``, 
-``aroma``, ``palate``, ``taste``, ``overall`` :
-- data/BeerAdvocate/ratings_overview_ba.csv
-- data/RateBeer/ratings_overview_rb.csv
+We advise you to connect to our `shared Google Drive` which you can find at the following address: teamdream.ada@gmail.com (password: teAmDreAm123)
+You will find all the datasets used for the project as well as the notebook `Final.ipynb`.
+
+## Website 
+Here is the link to our website : [click here](https://cerulean-pavlova-66ae22.netlify.app)
+<br>Enjoy ! 
+

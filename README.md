@@ -9,8 +9,7 @@ We are a consulting firm that specializes in helping breweries succeed through t
 Our client, Sam Smith, recently graduated from college in Massachusetts and is interested in starting a brewery. Seeking a more objective perspective, Sam has decided to turn to our consulting service for guidance.
 
 ## Research Questions
-<br>
-**Part 1 - First insights from the beer reviews websites**<br>
+**Part 1 - First insights from the beer reviews websites**
 - Where do consumers come from ?
 - Evolution of the beer industry in United States over the past few years
     - Evolution of the number of breweries involved in the ratings per year
@@ -18,7 +17,7 @@ Our client, Sam Smith, recently graduated from college in Massachusetts and is i
     - Evolution of consumers behavior
     - Did this hype around beers have an impact on breweries ? 
 <br><br>
-**Part 2 - Competitive state analysis**<br>
+**Part 2 - Competitive state analysis**
 - Where is the best place to open a brewery ?
     - Which are the states with a large market share to reach ?
     > What is the repartition of users and breweries across the states ? What is the evolution of the number of users over the years ? 
